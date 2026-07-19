@@ -1,0 +1,24 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.xdv
+
+# Private or outdated CV exports — keep them local
+CV_Wang_Jiajun.pdf
+curriculum vitae.pdf
+resume_2025_11.pdf
+
+# Upstream sample CV, not part of this website
+resume_photo.*
+
+# Local preview and editor files
+.DS_Store
+.idea/
+.vscode/

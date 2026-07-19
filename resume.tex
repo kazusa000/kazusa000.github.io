@@ -1,0 +1,115 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue
+}
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+\newcommand{\rolelink}[3]{%
+  \role{#1}{#2}\unskip\nobreak\hspace{0.3em}(\href{#3}{link})%
+}
+
+\name{Wang Jiajun}
+
+\basicInfo{
+  \email{1211334842@qq.com}
+}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Paris-Saclay University}, Paris, France}{Sep. 2024 -- Sep. 2026}
+%Ranked top 1 globally in Mathematics (Academic Ranking Of World Universities, 2022)\\
+Master in Mathematics and Applications (Analysis, Modeling, Simulation) \\
+\textbf{Main Courses}: PDEs Analysis (non-coercive, Inverse problem), Numerical Methods for PDEs (FEM, BEM), Optimization (Finite Dimension, Infinite Dimension (ODEs, PDEs constraints)), HPC (CPU,GPU)
+
+
+\datedsubsection{\textbf{Jiangnan University}, Wuxi, China}{Sep. 2020 -- Jun. 2024}
+Bachelor in Information and Computational Science (Math-focused) \quad Rank: 8 / 96 \\
+\textbf{Main Courses}: Mathematical Analysis, Numerical Analysis, Data Structures and Algorithms, Data Mining and Machine Learning, Intelligent Optimization Methods
+
+\section{\faFlask\ Research Experience}
+
+\datedsubsection{\textbf{Shape Optimization for Hydrodynamic Resistance in Stokes Flow}}{Apr. 2026 -- Sep. 2026}
+\textit{Research Internship, Laboratoire des Sciences du Numérique de Nantes, CNRS, France}
+\begin{itemize}
+  \item Studied shape optimisation methods for Stokes flow and hydrodynamic resistance.
+  \item Implemented a new optimisation approach using the Rodin FEM library.
+\end{itemize}
+
+
+\datedsubsection{\textbf{Optimization Methods for Direction-of-Arrival Estimation}}{Mar. 2024 -- Dec. 2024}
+\textit{Research Internship, School of Science, Jiangnan University, China}
+\begin{itemize}
+  \item Investigated numerical optimization for high-resolution signal processing.
+  \item Developed a more stable and accurate estimation scheme.
+  \item Contributed to model design and numerical evaluation.
+\end{itemize}
+
+\datedsubsection{\textbf{Robust Low-Rank Modeling and Sparse Noise Removal}}{Mar. 2023 -- May. 2024}
+\textit{Research Internship, School of Science, Jiangnan University, China}
+\begin{itemize}
+  \item Studied low-rank matrix recovery for signal decomposition.
+  \item Designed an iterative method improving robustness to noise.
+  \item Led experiments and manuscript writing.
+\end{itemize}
+
+\datedsubsection{\textbf{Parameter Identification of First-order RC Equivalent Circuit Model}}{Sep. 2022 -- Mar. 2023}
+\textit{Undergraduate Innovation Research Project, School of Science, Jiangnan University, China}
+\begin{itemize}
+  \item Identified parameters of simplified battery circuit models via numerical optimization.
+  \item Performed data analysis and simulation validation.
+  \item Designed the identification algorithm and wrote the manuscript.
+\end{itemize}
+
+\section*{\faFlask\ Publications}
+
+\subsection*{Journal Articles}
+
+\begin{itemize}
+	\item Xie, P., Chen, J., Cheng, L., \textbf{Wang, J.} (2026).
+  \textit{Three-Variable Symmetric Alternating Direction Method of Multipliers for Non-Separable Convex Optimization}.
+  Asian Journal of Control.
+  \href{https://doi.org/10.1002/asjc.70174}{doi:10.1002/asjc.70174}
+
+  \item Xie, P., Chen, J., \textbf{Wang, J.}, Mao, Y., Zhu, G., Yi, Y. (2026).
+  \textit{Alternating Direction Method of Multipliers for Direction of Arrival Estimation Under Mixed Noise}.
+  Signal Processing, 247, Article 110648.
+  \href{https://doi.org/10.1016/j.sigpro.2026.110648}{doi:10.1016/j.sigpro.2026.110648}
+
+  \item \textbf{Wang, J.}, Chen, J., Zhu, Q. (2024).
+  \textit{The Application of the Accelerated Proximal Gradient Descent Algorithm for the Solution of the Weighted Schatten-$p$ Norm in Sparse Noise Extraction}.
+  Circuits, Systems, and Signal Processing, 43, 5169--5190.
+  \href{https://doi.org/10.1007/s00034-024-02697-z}{doi:10.1007/s00034-024-02697-z}
+\end{itemize}
+
+\subsection*{Manuscripts under Review}
+
+\begin{itemize}
+  \item Chen, J., \textbf{Wang, J.}, Gan, M., Xu, H., Na, J. (2026).
+  \textit{Spectral Partitioning for Hierarchical Identification of Ill-Conditioned Systems: A Power-Iteration-Based Approach}.
+  Systems \& Control Letters. (under review)
+\end{itemize}
+
+\subsection*{Conference Papers}
+
+\begin{itemize}
+  \item \textbf{Wang, J.}, Cheng, L., Chen, J. (2023).
+  \textit{Parameter Identification of First-Order RC Equivalent Circuit Model Based on Improved Fractional-Order Gradient Descent}.
+  In Proceedings of the 35th Chinese Control and Decision Conference (CCDC), 293--298.
+\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Math: focus on Partial Differential Equations and Optimization
+  \item Programming: \textbf{MATLAB}, \textbf{Python}, C++, C, Web development
+  \item Languages: Chinese (native), English (C1), French (B2), Japanese (basic)
+\end{itemize}
+
+\section{\faInfo\ Miscellaneous}
+\begin{itemize}[parsep=0.5ex]
+  \item Violin: Level 8/10 ; Piano: beginner
+  \item Music arrangement: Self-taught; published original work online
+\end{itemize}
+
+\end{document}
