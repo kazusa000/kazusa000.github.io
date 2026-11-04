@@ -1470,3 +1470,14 @@ html[lang="zh-CN"] .contact-section h2 {
   .open-source-card { padding:24px; }
   .repository-meta { margin-bottom:17px; }
 }
+
+.experience-row .supervisors {
+  margin-top:9px;
+  font-size:12px;
+  line-height:1.85;
+  color:var(--muted);
+}
+.supervisors a {
+  color:var(--blue);
+  text-decoration-color:#bfd0e2;
+}

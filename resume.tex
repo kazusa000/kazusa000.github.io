@@ -1,6 +1,6 @@
 % !TEX program = xelatex
 \documentclass[10pt,a4paper]{article}
-\usepackage[margin=21mm]{geometry}
+\usepackage[margin=19mm]{geometry}
 \usepackage{fontspec}
 \setmainfont[Path=fonts/Main/,Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]{texgyretermes}
 \usepackage{xcolor,enumitem,titlesec,tabularx}
@@ -8,10 +8,10 @@
 \definecolor{muted}{HTML}{586A7D}
 \usepackage[colorlinks=true,urlcolor=accent]{hyperref}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{3pt}
-\setlist[itemize]{leftmargin=14pt,topsep=3pt,itemsep=2pt,parsep=0pt}
+\setlength{\parskip}{1.5pt}
+\setlist[itemize]{leftmargin=14pt,topsep=2pt,itemsep=1pt,parsep=0pt}
 \titleformat{\section}{\large\color{accent}}{}{0pt}{}[\vspace{-3pt}\titlerule]
-\titlespacing*{\section}{0pt}{13pt}{7pt}
+\titlespacing*{\section}{0pt}{11pt}{6pt}
 \newcommand{\entry}[3]{\par\begin{tabularx}{\textwidth}{@{}Xr@{}}\textbf{#1}&{\small\color{muted}#2}\end{tabularx}\par{\small\color{muted}#3}\par}
 \newcommand{\paper}[3]{\item #1.\ \textit{#2}.\ #3}
 \hypersetup{pdftitle={Jiajun Wang - Curriculum Vitae},pdfauthor={Jiajun Wang}}
@@ -33,26 +33,36 @@ Coursework: PDE analysis, finite element and boundary element methods, finite- a
 
 \section{Research experience}
 \entry{Backstepping transformations and feedback control}{Oct. 2026 -- present}{Doctoral research, IECL, Universit\'e de Lorraine}
+{\small\color{muted}Supervisors: \href{https://iecl.univ-lorraine.fr/membre-iecl/lacroix-violet-ingrid/}{Ingrid Lacroix-Violet}, \href{https://iecl.univ-lorraine.fr/une-action-exploratoire-pour-defricher-une-nouvelle-branche-des-mathematiques/}{Ludovick Gagnon}, \href{https://orcid.org/0000-0001-9810-2360}{Miha Zalo\v{z}nik}}\par
+
 \begin{itemize}
 \item Study constructive transformations and feedback design for finite-dimensional linear systems with single or multiple inputs.
 \item Prepare theoretical work as a manuscript and begin numerical comparisons, including invertible neural networks for computing transformations.
 \end{itemize}
 \entry{Shape optimization for hydrodynamic resistance in Stokes flow}{Apr. 2026 -- Aug. 2026}{Research internship, LS2N / CNRS, Nantes, France}
+{\small\color{muted}Supervisors: \href{https://clementmoreau.github.io/}{Cl\'ement Moreau}, \href{https://cbritopacheco.github.io/}{Carlos Brito-Pacheco}}\par
+
 \begin{itemize}
 \item Studied shape optimization methods for Stokes flow and hydrodynamic resistance.
 \item Implemented numerical optimization using the Rodin finite element library.
 \end{itemize}
 \entry{Optimization methods for direction-of-arrival estimation}{Mar. 2024 -- Dec. 2024}{School of Science, Jiangnan University, China}
+{\small\color{muted}Supervisor: \href{https://science.jiangnan.edu.cn/info/1017/7624.htm}{Jing Chen}}\par
+
 \begin{itemize}
 \item Investigated numerical optimization for high-resolution signal estimation under mixed noise.
 \item Contributed to model design and numerical evaluation.
 \end{itemize}
 \entry{Robust low-rank modeling and sparse noise removal}{Mar. 2023 -- May 2024}{School of Science, Jiangnan University, China}
+{\small\color{muted}Supervisor: \href{https://science.jiangnan.edu.cn/info/1017/7624.htm}{Jing Chen}}\par
+
 \begin{itemize}
 \item Studied iterative optimization for low-rank matrix recovery and signal decomposition.
 \item Led numerical experiments and manuscript writing.
 \end{itemize}
 \entry{Parameter identification of a first-order RC equivalent circuit model}{Sep. 2022 -- Mar. 2023}{Undergraduate innovation research project, Jiangnan University, China}
+{\small\color{muted}Supervisor: \href{https://science.jiangnan.edu.cn/info/1017/7624.htm}{Jing Chen}}\par
+
 \begin{itemize}
 \item Designed an identification algorithm using numerical optimization and fractional-order gradient methods.
 \item Performed data analysis, simulation validation, and manuscript writing.
