@@ -9,7 +9,9 @@ Live site: https://kazusa000.github.io/
 - Current doctoral research: backstepping transformations, feedback design, and numerical methods.
 - Earlier research in Stokes shape optimization, signal estimation, low-rank recovery, and parameter identification.
 - Journal articles, a manuscript, and a conference paper with category filters.
-- Research experience, education, open-source software, and music interests.
+- Research experience and education.
+- The three most-starred public repositories: AI Game Workbench (107 stars), Music Learning (39), and Innerlife (7), checked on 2026-11-04.
+- GitHub, IECL, and Bilibili profile links.
 - English / Chinese switching and an updated two-page English CV.
 
 The diagrams are conceptual illustrations, not numerical experiment results.

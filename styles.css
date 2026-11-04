@@ -148,7 +148,7 @@ p+p {
   display:grid;
   grid-template-columns:minmax(0,1.35fr) minmax(320px,.85fr);
   gap:80px;
-  padding-block:76px 66px;
+  padding-block:48px 42px;
   align-items:center;
 }
 
@@ -196,12 +196,6 @@ h1 {
   color:var(--muted);
 }
 
-.hero-lead {
-  font-size:26px;
-  line-height:1.4;
-  letter-spacing:-.6px;
-  margin-top:0;
-}
 
 .hero-intro {
   font-size:15px;
@@ -309,7 +303,7 @@ h1 {
 }
 
 .sketch-steps {
-  padding-top:28px;
+  padding-top:18px;
   position:relative;
   z-index:1;
 }
@@ -352,7 +346,7 @@ h1 {
 
 .step-arrow {
   display:block;
-  margin:13px 0 13px 32px;
+  margin:8px 0 8px 32px;
   font-size:17px;
   color:#9bb2c9;
 }
@@ -427,9 +421,9 @@ h1 {
 
 .section-head h2 {
   font-family:Georgia,"Times New Roman",serif;
-  font-size:42px;
+  font-size:28px;
   font-weight:400;
-  letter-spacing:-1.5px;
+  letter-spacing:-.6px;
   margin-top:12px;
 }
 
@@ -836,56 +830,13 @@ h1 {
   font-size:12px;
 }
 
-.beyond-section {
-  background:#f5f8fc;
-  border-block:1px solid var(--line);
-}
 
-.beyond-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:38px;
-}
 
-.beyond-grid article {
-  border-top:1px solid #c6d6e6;
-  padding-top:22px;
-  display:flex;
-  flex-direction:column;
-  align-items:start;
-}
 
-.beyond-icon {
-  font:29px Georgia,serif;
-  color:#6083a4;
-  height:48px;
-}
 
-.beyond-grid h3 {
-  font-size:19px;
-  font-weight:500;
-}
 
-.beyond-grid p {
-  font-size:13px;
-  color:var(--muted);
-  line-height:1.85;
-  margin-top:13px;
-}
 
-.beyond-grid .plain-link {
-  margin-top:auto;
-  padding-top:20px;
-  color:var(--blue);
-  font-size:12px;
-}
 
-.beyond-grid .music-note {
-  font-size:11px;
-  color:#7f92a7;
-  margin-top:auto;
-  padding-top:20px;
-}
 
 .contact-section {
   padding-block:69px;
@@ -896,7 +847,7 @@ h1 {
 }
 
 .contact-section h2 {
-  font:400 36px/1.3 Georgia,"Times New Roman",serif;
+  font:400 28px/1.3 Georgia,"Times New Roman",serif;
   letter-spacing:-1px;
   margin-top:15px;
 }
@@ -989,14 +940,10 @@ html[lang="zh-CN"] h2 {
   letter-spacing:-.6px;
 }
 
-html[lang="zh-CN"] .hero-lead {
-  font-size:26px;
-  letter-spacing:.5px;
-}
 
 html[lang="zh-CN"] .section-head h2 {
   font-family:"PingFang SC","Microsoft YaHei",sans-serif;
-  font-size:34px;
+  font-size:28px;
   line-height:1.5;
 }
 
@@ -1028,9 +975,6 @@ html[lang="zh-CN"] .contact-section h2 {
   .brand>span:last-child {
     display:none;
   }
-  .hero-lead {
-    font-size:23px;
-  }
   .hero-intro {
     font-size:14px;
   }
@@ -1042,9 +986,6 @@ html[lang="zh-CN"] .contact-section h2 {
   }
   .research-notes {
     padding:30px 26px;
-  }
-  .beyond-grid {
-    gap:25px;
   }
   .contact-email {
     font-size:15px;
@@ -1100,9 +1041,6 @@ html[lang="zh-CN"] .contact-section h2 {
   .name-cn {
     font-size:18px;
     margin-top:8px;
-  }
-  .hero-lead {
-    font-size:24px;
   }
   .hero-intro {
     font-size:14px;
@@ -1310,22 +1248,6 @@ html[lang="zh-CN"] .contact-section h2 {
   .skills {
     padding-top:21px;
   }
-  .beyond-grid {
-    grid-template-columns:1fr;
-    gap:30px;
-  }
-  .beyond-grid article {
-    padding-top:19px;
-  }
-  .beyond-icon {
-    height:42px;
-  }
-  .beyond-grid p {
-    font-size:13px;
-  }
-  .beyond-grid .plain-link,.beyond-grid .music-note {
-    padding-top:17px;
-  }
   .contact-section {
     grid-template-columns:1fr;
     gap:28px;
@@ -1356,9 +1278,6 @@ html[lang="zh-CN"] .contact-section h2 {
   }
   html[lang="zh-CN"] .section-head h2 {
     font-size:28px;
-  }
-  html[lang="zh-CN"] .hero-lead {
-    font-size:24px;
   }
   html[lang="zh-CN"] .contact-section h2 {
     font-size:27px;
@@ -1416,7 +1335,7 @@ html[lang="zh-CN"] .contact-section h2 {
 }
 
 @media print {
-  .site-header,.research-sketch,.focus-strip,.hero-links,.publication-filters,.beyond-section,.contact-section,footer {
+  .site-header,.research-sketch,.focus-strip,.hero-links,.publication-filters,.open-source-section,.contact-section,footer {
     display:none!important;
   }
   .wrap {
@@ -1430,9 +1349,6 @@ html[lang="zh-CN"] .contact-section h2 {
   }
   h1 {
     font-size:32px;
-  }
-  .hero-lead {
-    font-size:19px;
   }
   .current-research,.background-grid {
     display:block;
@@ -1453,4 +1369,104 @@ html[lang="zh-CN"] .contact-section h2 {
   body {
     font-size:11px;
   }
+}
+
+/* Public repositories, ranked by GitHub stars on 2026-11-04. */
+.open-source-section {
+  background:#f5f8fc;
+  border-block:1px solid var(--line);
+}
+.open-source-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+}
+.open-source-card {
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  padding:25px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:6px;
+}
+.repository-meta {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:23px;
+}
+.repository-rank {
+  color:#71859b;
+  font:17px Georgia,serif;
+}
+.star-count {
+  color:var(--blue);
+  text-decoration:none;
+  font-size:14px;
+}
+.repository-kind {
+  color:var(--muted);
+  font-size:11px;
+  margin-bottom:9px;
+}
+.open-source-card h3 {
+  font-size:20px;
+  font-weight:600;
+  line-height:1.4;
+}
+.open-source-card h3 a {
+  text-decoration:none;
+}
+.open-source-card h3 a>span {
+  color:#7890a8;
+  font-size:15px;
+  white-space:nowrap;
+}
+.repository-description {
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.85;
+  margin-top:16px;
+}
+.repository-tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:auto;
+  padding-top:22px;
+}
+.repository-tags>span {
+  padding:3px 8px;
+  border-radius:3px;
+  background:#f1f5fa;
+  color:#527394;
+  font-size:11px;
+}
+.repository-link {
+  margin-top:19px;
+  color:var(--blue);
+  font-size:12px;
+  overflow-wrap:anywhere;
+  text-decoration:none;
+}
+.project-profiles {
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px 30px;
+  margin-top:25px;
+  color:var(--blue);
+}
+@media(max-width:1050px) {
+  .open-source-grid { gap:16px; }
+  .open-source-card { padding:21px; }
+}
+@media(max-width:760px) {
+  .section-head h2,
+  html[lang="zh-CN"] .section-head h2,
+  .contact-section h2,
+  html[lang="zh-CN"] .contact-section h2 { font-size:26px; }
+  .open-source-grid { grid-template-columns:1fr; gap:18px; }
+  .open-source-card { padding:24px; }
+  .repository-meta { margin-bottom:17px; }
 }
