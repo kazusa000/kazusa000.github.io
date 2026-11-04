@@ -1,40 +1,45 @@
-# Wang Jiajun — Academic Homepage
+# Jiajun Wang - Personal Homepage
 
-Source code for my academic homepage: **https://kazusa000.github.io**
+Bilingual academic homepage for Jiajun Wang (王家骏), a PhD student at Université de Lorraine, Institut Élie Cartan de Lorraine (IECL).
 
-I am a master's student in Mathematics and Applications at Université Paris-Saclay. My interests include numerical analysis, partial differential equations, optimization, finite element methods, and scientific computing.
+Live site: https://kazusa000.github.io/
 
-## Local preview
+## Content
 
-The site is static and has no build dependencies. From this directory, run:
+- Current doctoral research: backstepping transformations, feedback design, and numerical methods.
+- Earlier research in Stokes shape optimization, signal estimation, low-rank recovery, and parameter identification.
+- Journal articles, a manuscript, and a conference paper with category filters.
+- Research experience, education, open-source software, and music interests.
+- English / Chinese switching and an updated two-page English CV.
 
-```bash
-python3 -m http.server 8000
+The diagrams are conceptual illustrations, not numerical experiment results.
+
+## Preview
+
+This is a static, dependency-free site. Serve the repository root:
+
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Then open <http://localhost:8000>.
-
-## Publish with GitHub Pages
-
-1. Create a public repository named `kazusa000.github.io` under the GitHub account `kazusa000`.
-2. Push this directory to the repository's `main` branch.
-3. In **Settings → Pages**, select **Deploy from a branch**, then choose `main` and `/ (root)`.
-4. Visit <https://kazusa000.github.io> after GitHub finishes the deployment.
+Open http://localhost:8000. JavaScript adds language switching and publication filters; all English content and links remain available without it.
 
 ## Main files
 
-- `index.html` — page content
-- `styles.css` — visual design and responsive layout
-- `avatar.jpg` — profile image
-- `resume.pdf` — downloadable curriculum vitae
-- `resume.tex` — LaTeX source for the curriculum vitae
+- `index.html`: bilingual content; English is the default.
+- `styles.css`: desktop, mobile, print, and reduced-motion styles.
+- `script.js`: language preference and publication filters.
+- `assets/`: original vector illustrations and site identity assets.
+- `resume.tex` / `resume.pdf`: downloadable CV and its source.
 
-## Updating the CV
+## Publish
 
-Compile only the main CV with:
+GitHub Pages serves `main` from the repository root. Push the verified commit to `main` to update the existing site. No build system or hosting migration is needed.
 
-```bash
-latexmk -xelatex resume.tex
+## Update the CV
+
+```sh
+latexmk -norc -xelatex -interaction=nonstopmode -halt-on-error resume.tex
 ```
 
-The original LaTeX résumé template was adapted from [billryan/resume](https://github.com/billryan/resume) and remains subject to its license.
+The historical résumé template files remain under their original license.
